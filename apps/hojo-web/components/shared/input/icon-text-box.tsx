@@ -13,7 +13,7 @@ export default function IconTextBox({ startIcon, endIcon, ...props }: IconTextBo
   props.InputProps = {
     ...props.InputProps,
     startAdornment: startIcon ? <InputAdornment position="start">{startIcon}</InputAdornment> : null,
-    endAdornment: startIcon ? <InputAdornment position="end">{endIcon}</InputAdornment> : null,
+    endAdornment: endIcon ? <InputAdornment position="end">{endIcon}</InputAdornment> : null,
   };
 
   return <TextBox {...props} />;
